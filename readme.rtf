@@ -1,0 +1,133 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset128 HiraKakuProN-W3;\f2\fnil\fcharset134 STHeitiSC-Light;
+}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+Plan:\
+0. book loading when needed(save previous position)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1 \cf0 1. refresh item when changed\
+2. item edit(delete,reposition,etc)\
+
+\f2 3. \'cf\'c2\'d4\'d8\'bd\'e7\'c3\'e6\'ba\'cd\'d5\'fd\'d4\'da\'cf\'c2\'d4\'d8\'bd\'e7\'c3\'e6\'ba\'cf\'b2\'a2\'a3\'a8\'d2\'d1\'d3\'d0\'a3\'ac\'b4\'fa\'ba\'cf\'b2\'a2\'a3\'a9\
+4. UI images\
+   4.1 default book icon\
+   4.2 tabbar icon\
+   4.3 facebook-like menu icons\
+   4.4 
+\f0 \
+\
+resource:\
+1.navigationbar background 
+\f2 \'cd\'bc\'cf\'f1
+\f1 \'81\'46\'8d\'82\'93\'78\'81\'74\'81\'81
+\f0 44\
+2. navigationbar UIBarButtonImage 
+\f1 \'9b\'df\'97\'4c
+\f0 \
+3.
+\f2 \'ca\'e9\'bc\'ae
+\f1 \'93\'49\'e3\'9e\'8f\'c8
+\f2 \'cd\'bc 65X94\
+4. \'d3\'a6\'d3\'c3\'b3\'cc\'d0\'f2icon\'a3\'ba 512\'a3\'ac\'bd\'f8\'c8\'ebsplashscreen\
+5.sidebar\'a3\'ba30X30 \'d6\'f7\'d2\'b3\'a3\'bb\'ca\'e9\'b3\'c7\'a3\'bb\'d3\'e9\'c0\'d6\'a3\'bb\'cd\'c6\'bc\'f6\'a3\'bb\'c9\'e8\'d6\'c3\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0 \cf0 \
+\
+Version 1.0.0\
+1.dowload file\
+2.Browse dowloaded file & reposition them \
+3.category for file browser and dowload(Data collection)\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1 \cf0 \'89\'ba\'88\'ea\uc0\u27493 \'93\'49\'8d\'48\'8d\'ec
+\f2 \'bc\'c6
+\f1 \uc0\u21010 \'81\'4620121105\
+begin
+\f0 \
+
+\f2 \'b5\'d7\'b2\'e3
+\f1 \'90\'94\'90\'98\'8a\'c7\'97\'9d\'96\'cd
+\f2 \'bf\'e9
+\f1 \
+1.\'96\'7b\'92\'6e\'90\'94\'90\'98\'93\'49
+\f2 \'b5\'bc
+\f1 \'93\'fc(done)\
+2.\'95\'9e
+\f2 \'ce\'f1
+\f1 \'8a\'ed\'90\'94\'90\'98\'93\'49
+\f2 \'b5\'bc
+\f1 \'93\'fc(\'8a\'ee\'98\'b0xml\'90\'94\'90\'98
+\f2 \'b5\'bc
+\f1 \'93\'fc)\
+\'8f\'8a\'97\'4c\'90\'94\'90\'98\'8f\'85\'8f\'7a\'93\'af
+\f2 \'d1\'f9
+\f1 \'93\'49\'90\'94\'90\'98\'96\'cd\'8c\'5e\'81\'43\'97\'88\'8c\'b9\'95\'73\'93\'af\'8e\'a7\'9b\'df\'81\'42\'8d\'dd\'92\'ea
+\f2 \'b2\'e3\'be\'f9\'b2\'c9\'d3\'c3coredata\'bc\'bc\'ca\'f5\'bd\'f8\'d0\'d0\'b9\'dc\'c0\'ed\'a1\'a3\
+\'b6\'d4\'cd\'e2\'cc\'e1\'b9\'a9\'cd\'b3\'d2\'bb\'b5\'c4\'bd\'d3\'bf\'da\'a3\'ac\'cc\'e1\'b9\'a9\'b3\'a3\'d3\'c3\'b2\'d9\'d7\'f7\'a3\'ba\'d4\'f6\'c9\'be\'b8\'c4\'b2\'e9
+\f1 \
+3.XML\'89\'f0\'90\'cd\'96\'cd
+\f2 \'bf\'e9
+\f1 \'81\'46\'92\'f1\'8b\'9fxml\'90\'94\'90\'98\'93\'49
+\f2 \'bd\'e2\'ce\'f6\'a3\'a8done)\'a3\'bb\
+4.\'ca\'e9\'bc\'ae\'ca\'fd\'be\'dd\'b5\'c4\'b1\'a3\'b4\'e6\
+4.1\'cb\'f9\'d3\'d0\'ca\'e9\'bc\'ae\'a3\'ba\'d4\'f6\'bc\'d3\'cf\'c2\'d4\'d8\'ca\'b1\'bc\'e4\'a3\'ac\'d7\'d6\'ca\'fd\'a3\'a8\'b4\'fd\'bc\'d3\'c8\'eb\'cf\'c2\'d4\'d8\'c1\'f7\'b3\'cc\'a3\'ac\'b2\'a2\'d4\'f6\'bc\'d3\'ca\'b1\'bc\'e4\'ba\'cd\'d7\'d6\'ca\'fd\'ca\'f4\'d0\'d4\'a3\'a9\
+4.2\'d7\'ee\'bd\'fc\'bf\'b4\'b9\'fd\'a3\'ba\'d4\'f6\'bc\'d3\'c8\'d5\'c6\'da\'ba\'cd\'c5\'c5\'b0\'e6\'ce\'bb\'d6\'c3\'a3\'bb\'a3\'a8\'b4\'fd\'bc\'d3\'c8\'eb\'cf\'c2\'d4\'d8\'c1\'f7\'b3\'cc\'a3\'ac\'b2\'a2\'d4\'f6\'bc\'d3\'ca\'b1\'bc\'e4\'ba\'cd\'d7\'d6\'ca\'fd\'ca\'f4\'d0\'d4\'a3\'a9\
+5.\'ca\'fd\'be\'dd\'b5\'c4\'b1\'a3\'b4\'e6\'a3\'ba\'d4\'dadocuments\'c4\'bf\'c2\'bc\'cf\'c2\'b5\'c4BOOKS\'c4\'bf\'c2\'bc\'cf\'c2\'a3\'ac\'c3\'bf\'b1\'be\'ca\'e9\'b0\'b4\'d5\'d5\'ca\'e9\'c3\'fb\'bd\'a8\'c1\'a2\'d2\'bb\'b8\'f6\'c4\'bf\'c2\'bc\'b1\'a3\'b4\'e6\'a3\'a8done\'a3\'a9\
+
+\f1 \
+6.debug\
+6.1chinese url is not supported(url encoding,done)\
+6.2 file type when downloading and file type recognition(done)\
+6.3 automatic file encoding detection(done)\
+6.4 main ui auto refresh(done)\
+6.5 recommend list differs with main ui list which includes several books only (done)\
+6.6 file loading when needed(last read page)(done)\
+6.7 facebook-like main ui(done)\
+\
+\
+\'8a\'45\'96\'ca\'93\'49\uc0\u24320 
+\f2 \'b7\'a2
+\f1 \'81\'46\'8e\'51\'8d\'6c\'8c\'e4
+\f2 \'ca\'e9
+\f1 \'96\'5b\
+1.\'90\'84\'e4\'a6\'8a\'45\'96\'ca\'81\'69xiaolin\'81\'6a\
+2.
+\f2 \'cf\'ea
+\f1 \'8f\'ee
+\f2 \'bd\'e7\'c3\'e6\'a3\'a8xiaolin\'a3\'a9
+\f1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1 \cf0 end\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0 \cf0 \
+Data model\
+\
+1.Leave\
+Name :title of this book\
+Author\
+Image:image of this book\
+Summary\
+Url:where this book sits\
+FileName\
+\
+\
+2.Branch\
+Classification of books\
+\
+3.Tree}
